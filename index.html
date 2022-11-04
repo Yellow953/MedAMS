@@ -1,105 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MedAMS</title>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <title>MedAMS</title>
 
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+      <link rel="shortcut icon" href="images/logo1.png" type="image/x-icon">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/custom.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body class="main-layout">
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt=""/></div>
+      </div>
+      <div id="mySidepanel" class="sidepanel">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         <a href="#home">Home</a>
+         <a href="#location">Location</a>
+         <a href="#about">About</a>
+         <a href="#coverage">Coverage</a>
+         <a href="#services">Services</a>
+         <a href="#brands">Brands</a>
+      </div>
+      <header class="bg-white p-md-3">
+         <div class="head-top">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-sm-3">
+                     <div class="logo p-md-2">
+                        <a href="#home"><img src="images/logo1.png"></a>
+                     </div>
+                  </div>
+                  <div class="col-sm-9">
+                     <ul class="email text_align_right p-md-3">
+                        <li class="d_none"><a href="#location" class="color-custom custom-size">Location</a></li>
+                        <li class="d_none"><a href="#about" class="color-custom custom-size">About</a></li>
+                        <li class="d_none"><a href="#coverage" class="color-custom custom-size">Coverage</a></li>
+                        <li class="d_none"><a href="#services" class="color-custom custom-size">Services</a></li>
+                        <li class="d_none"><a href="#brands" class="color-custom custom-size">Brands</a></li>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/script.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- color-hex: #9a0134 -->
-</head>
-<body>
-    <div class="container-fluid p-0 m-0">
-        <nav class="navbar navbar-expand-lg navbar-light bg-secondary w-100 m-0 px-5 py-3">
-            <a class="navbar-brand" href="#" id="logo_link_1">
-                <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                        
+                        <li> <button class="openbtn" onclick="openNav()"><img src="images/menu_btn.png" class="burger"></button></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class=" banner_main" id="home">
+         <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#myCarousel" data-slide-to="1"></li>
+               <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="carousel-caption relative">
+                        <div class="bg_white">
+                           <h1 class="color-custom">Our Mission</h1>
+                           <p>
+                              We are a group of Healthcare Professionals gathered under the umbrella of Med AMS. Our mission is to market and promote medical
+                              products and projects in the MENA region where we have been operating for many years now each one in his field of expertise <br>
+                              We add value by eliminating the technical, cultural, and linguistic barriers thus conveying the information quickly and precisely.
+                              Our expertise in this field helped us build a very strong and reliable network of partners who can help us market and promote Medical
+                              Products in all specialties
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption relative">
+                        <div class="bg_white">
+                           <h1 class="color-custom">Our Mission</h1>
+                           <p>
+                              We are a group of Healthcare Professionals gathered under the umbrella of Med AMS. Our mission is to market and promote medical
+                              products and projects in the MENA region where we have been operating for many years now each one in his field of expertise <br>
+                              We add value by eliminating the technical, cultural, and linguistic barriers thus conveying the information quickly and precisely.
+                              Our expertise in this field helped us build a very strong and reliable network of partners who can help us market and promote Medical
+                              Products in all specialties
+                           </p>   
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption relative">
+                        <div class="bg_white">
+                           <h1 class="color-custom">Our Mission</h1>
+                           <p>
+                              We are a group of Healthcare Professionals gathered under the umbrella of Med AMS. Our mission is to market and promote medical
+                              products and projects in the MENA region where we have been operating for many years now each one in his field of expertise <br>
+                              We add value by eliminating the technical, cultural, and linguistic barriers thus conveying the information quickly and precisely.
+                              Our expertise in this field helped us build a very strong and reliable network of partners who can help us market and promote Medical
+                              Products in all specialties
+                           </p>   
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
             </a>
-            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-                <a class="nav-link" href="#about_us">
-                    About us
-                </a>
-
-                <a class="nav-link" href="#members">
-                    Members
-                </a>
-
-                <a class="nav-link" href="#main" id="logo_link_2">
-                    <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                </a>
-
-                <a class="nav-link" href="#services">
-                    Services
-                </a>
-
-                <a class="nav-link" href="#brands">
-                    Brands
-                </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+         </div>
+      </div>
+      
+      <div id="about" class="about top_layer m-4">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="titlepage">
+                     <h2>Our Mission</h2>
+                  </div>
+               </div>
+               <div class=" col-sm-12">
+                  <div class="about_box">
+                     <div class="row d_flex">
+                        <div class="col-md-6">
+                           <div class="about_box_text">
+                              <p>
+                                 We are a group of Healthcare Professionals gathered under the umbrella of Med AMS. Our mission is to market and promote medical 
+                                 products and projects in the MENA region where we have been operating for many years now each one in his field of expertise <br><br>
+                                 We add value by eliminating the technical, cultural, and linguistic barriers thus conveying the information quickly and precisely.
+                                 Our expertise in this field helped us build a very strong and reliable network of partners who can help us market and promote Medical Products in all specialties
+                              </p>
+                           </div>
+                        </div>
+                        <div class=" col-md-5 pppp d-none d-md-block">
+                           <div class="about_box_img">
+                              <figure><img src="images/logo.png" alt="#" class="img-fluid p-5"/></figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </nav>
+         </div>
+      </div>
+      <!-- end six_box-->
+      <!-- building -->
+      <div class="building">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>IF A BUILDING <br><span class="yello">BECOMES ARCHITECTURE <br></span> THEN IT IS ART</h2>
+                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, asIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, asIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end building -->
+      <!-- services -->
+      <div class="services_main" id="services">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Services</h2>
+                     <span>It is a long established fact that a reader will be distracted by the readable content </span>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-12">
+                  <ul class="nav nav-tabs md-tabs border_none" id="myTabMD" role="tablist">
+                     <li class="nav-item lisertab">
+                        <a class="nav-link servi_tab active" id="home-tab-md" data-toggle="tab" href="#home-md" role="tab" aria-controls="home-md"
+                           aria-selected="true">RESIDENTAL</a>
+                     </li>
+                     <li class="nav-item lisertab">
+                        <a class="nav-link servi_tab" id="profile-tab-md" data-toggle="tab" href="#profile-md" role="tab" aria-controls="profile-md"
+                           aria-selected="false">RETAIL DESIGN</a>
+                     </li>
+                     <li class="nav-item lisertab">
+                        <a class="nav-link servi_tab" id="contact-tab-md" data-toggle="tab" href="#contact-md" role="tab" aria-controls="contact-md"
+                           aria-selected="false">SPACE ADAPTATION</a>
+                     </li>
+                  </ul>
+                  <div class="tab-content card back_bg" id="myTabContentMD">
+                     <div class="tab-pane fade show active" id="home-md" role="tabpanel" aria-labelledby="home-tab-md">
+                        <div class="row">
+                           <div class="col-md-4 col-sm-6 padding_0 margin_right20">
+                              <div class="services">
+                                 <div class="services_img">
+                                    <figure><img src="images/service_img1.png" alt="#" />  </figure>
+                                    <div class="ho_dist">
+                                       <span>Reader will be distracted</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-4 col-sm-6 padding_0 margin_top70p margin_right20 margin_left20">
+                              <div class="services">
+                                 <div class="services_img">
+                                    <figure><img src="images/service_img2.png" alt="#" />  </figure>
+                                    <div class="ho_dist">
+                                       <span>Reader will be distracted</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-4 col-sm-6 padding_0 margin_left20">
+                              <div class="services">
+                                 <div class="services_img">
+                                    <figure><img src="images/service_img3.png" alt="#" />  </figure>
+                                    <div class="ho_dist">
+                                       <span>Reader will be distracted</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-4 offset-md-8 col-sm-6 padding_0 margin_top170">
+                              <div class="services margin_left60">
+                                 <div class="services_img">
+                                    <figure><img src="images/service_img4.png" alt="#" />  </figure>
+                                    <div class="ho_dist">
+                                       <span>Reader will be distracted</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-6 margin_top40">
+                              <a class="read_more " href="Javascript:void(0)">Read More</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="tab-pane fade" id="profile-md" role="tabpanel" aria-labelledby="profile-tab-md">
+                        <div class="row">
+                           <div class="col-md-4 col-sm-6 padding_0 margin_right20">
+                              <div class="services">
+                                 <div class="services_img">
+                                    <figure><img src="images/service_img3.png" alt="#" />  </figure>
+                                    <div class="ho_dist">
+                                       <span>Reader will be distracted</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-4 col-sm-6 padding_0 margin_top70p margin_right20 margin_left20">
+                              <div class="services">
+                                 <div class="services_img">
+                                    <figure><img src="images/service_img2.png" alt="#" />  </figure>
+                                    <div class="ho_dist">
+                                       <span>Reader will be distracted</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-4 col-sm-6 padding_0 margin_left20">
+                              <div class="services">
+                                 <div class="services_img">
+                                    <figure><img src="images/service_img4.png" alt="#" />  </figure>
+                                    <div class="ho_dist">
+                                       <span>Reader will be distracted</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-4 offset-md-8 col-sm-6 padding_0 margin_top170">
+                              <div class="services margin_left60">
+                                 <div class="services_img">
+                                    <figure><img src="images/service_img1.png" alt="#" />  </figure>
+                                    <div class="ho_dist">
+                                       <span>Reader will be distracted</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-6 margin_top40">
+                              <a class="read_more " href="Javascript:void(0)">Read More</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="tab-pane fade" id="contact-md" role="tabpanel" aria-labelledby="contact-tab-md">
+                        <div class="row">
+                           <div class="col-md-4 col-sm-6 padding_0 margin_right20">
+                              <div class="services">
+                                 <div class="services_img">
+                                    <figure><img src="images/service_img4.png" alt="#" />  </figure>
+                                    <div class="ho_dist">
+                                       <span>Reader will be distracted</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-4 col-sm-6 padding_0 margin_top70p margin_right20 margin_left20">
+                              <div class="services">
+                                 <div class="services_img">
+                                    <figure><img src="images/service_img2.png" alt="#" />  </figure>
+                                    <div class="ho_dist">
+                                       <span>Reader will be distracted</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-4 col-sm-6 padding_0 margin_left20">
+                              <div class="services">
+                                 <div class="services_img">
+                                    <figure><img src="images/service_img1.png" alt="#" />  </figure>
+                                    <div class="ho_dist">
+                                       <span>Reader will be distracted</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-4 offset-md-8 col-sm-6 padding_0 margin_top170">
+                              <div class="services margin_left60">
+                                 <div class="services_img">
+                                    <figure><img src="images/service_img3.png" alt="#" />  </figure>
+                                    <div class="ho_dist">
+                                       <span>Reader will be distracted</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-6 margin_top40">
+                              <a class="read_more " href="Javascript:void(0)">Read More</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end services -->
 
-        <div id="main">
-
-        </div>
-
-        <div id="about_us">
-
-        </div>
-
-        <div id="members">
-
-        </div>
-
-        <div id="services">
-
-        </div>
-
-        <div id="brands">
+      <!-- instant -->
+      <div class="instant" id="brands">
+         <div class="container-fluid">
             <div class="row text-center">
-                <div class="offset-md-1 col-md-2">
-                    <div class="card m-2 p-3">
-                        <img src="img/eberle.png" alt="" class="card_img mb-2">
-                        <p>EBERLE GmbH & Co. KG manufactures medical devices for minimally invasive surgery and orthopedics</p><br>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="card m-2 p-3">
-                        <img src="img/rejoin.png" alt="" class="card_img mb-2">
-                        <p>REJOIN provides specialized sports medicine & minimally invasive orthopedic solutions for global healthcare professionals</p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="card m-2 p-3">
-                        <img src="img/sorme.png" alt="" class="card_img mb-2">
-                        <p>Treatment cosmetics infused with vitamins, antioxidants and natural minerals and oils </p><br><br>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="card m-2 p-3">
-                        <img src="img/refinee.png" alt="" class="card_img mb-2">
-                        <p>Refineé Age Reversing Skin Care uses the most exceptional quality natural botanical extracts from plants and sea life</p><br>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="card m-2 p-3">
-                        <img src="img/capsa.png" alt="" class="card_img mb-2">
-                        <p>Pioneer in the health IT, Medication Management and pharmacy automation</p><br><br><br>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+               <div class="offset-lg-1 col-md-6 col-lg-2">
+                   <div class="card m-2 p-3">
+                       <img src="images/eberle.png" alt="" class="card_img mb-2">
+                       <p>EBERLE GmbH & Co. KG manufactures medical devices for minimally invasive surgery and orthopedics</p><br>
+                   </div>
+               </div>
+               <div class="col-md-6 col-lg-2">
+                   <div class="card m-2 p-3">
+                       <img src="images/rejoin.png" alt="" class="card_img mb-2">
+                       <p>REJOIN provides specialized sports medicine & minimally invasive orthopedic solutions for global healthcare professionals</p>
+                   </div>
+               </div>
+               <div class="col-md-6 col-lg-2">
+                   <div class="card m-2 p-3">
+                       <img src="images/sorme.png" alt="" class="card_img mb-2">
+                       <p>Treatment cosmetics infused with vitamins, antioxidants and natural minerals and oils </p><br><br>
+                   </div>
+               </div>
+               <div class="col-md-6 col-lg-2">
+                   <div class="card m-2 p-3">
+                       <img src="images/refinee.png" alt="" class="card_img mb-2">
+                       <p>Refineé Age Reversing Skin Care uses the most exceptional quality natural botanical extracts from plants and sea life</p><br>
+                   </div>
+               </div>
+               <div class="col-md-6 col-lg-2">
+                   <div class="card m-2 p-3">
+                       <img src="images/capsa.png" alt="" class="card_img mb-2">
+                       <p>Pioneer in the health IT, Medication Management and pharmacy automation</p><br><br>
+                   </div>
+               </div>
+           </div>
+         </div>
+      </div>
 
-</body>
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-10 offset-md-1">
+                     <ul class="social_icon text_align_center">
+                        <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-4 col-sm-6">
+                     <div class="reader">
+                        <a href="#home"><img src="images/logo1.png" alt="#"/></a>
+                        <p class="padd_flet40">It is a well known and powerful corporation</p>
+                     </div>
+                  </div>
+                  <div class="offset-md-1 col-md-2 col-sm-6">
+                     <div class="reader">
+                        <h3>Explore</h3>
+                        <ul class="xple_menu">
+                           <li><a href="#coverage">Coverage</a></li>
+                           <li><a href="#about">About</a></li>
+                           <li><a href="#location">Location</a></li>
+                           <li><a href="#services">Services</a></li>
+                           <li><a href="#brands">Brands</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="offset-md-1 col-md-4 col-sm-6">
+                     <div class="reader">
+                        <h3>About Us</h3>
+                        <p>It is a well known and powerful corporation</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright text_align_center">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-10 offset-md-1">
+                        <p>Copyright 2022 All Right Reserved By <a href="www.yellow.tech">Yellow.tech</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+   </body>
 </html>
