@@ -37,3 +37,13 @@ header{
     width: 30px;
     height: 30px;
 }
+.profile_pic{
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .burger{
+        margin-top: 15px;
+    }
+}
