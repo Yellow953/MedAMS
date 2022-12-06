@@ -41,6 +41,9 @@ header{
     width: 100%;
     height: auto;
 }
+.bg-maroon{
+    background-color: #540705!important;
+}
 
 @media only screen and (max-width: 600px) {
     .burger{
