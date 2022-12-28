@@ -44,6 +44,10 @@ header{
 .bg-maroon{
     background-color: #540705!important;
 }
+.slider-image{
+    width: 100%;
+    height: 100vh;
+}
 
 @media only screen and (max-width: 600px) {
     .burger{
