@@ -53,6 +53,12 @@ header{
     width: 70vw;
     border: solid 5px #9a0134;
 }
+.w-70{
+    width: 70%;
+}
+.custom-font-size{
+    font-size: 0.7rem;
+}
 
 @media only screen and (max-width: 600px) {
     .burger{
